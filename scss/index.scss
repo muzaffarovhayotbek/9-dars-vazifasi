@@ -1,0 +1,158 @@
+@import url("./fonts.css");
+@import url("./normalize.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+img {
+  transition: all 1s;
+}
+img:hover {
+  cursor: pointer;
+  transform: rotateY(360deg);
+}
+.header-section1 ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  a {
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    color: #002959;
+    transition: 2s ease;
+
+  }
+  a:hover {
+    text-decoration: underline;
+    background-color: rgb(194, 186, 186);
+    cursor: pointer;
+    padding: 5px;
+  }
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.header-section2 {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  button {
+    width: 133px;
+    height: 60px;
+
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+
+    background-color: #ec6c21;
+
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    color: #fff;
+    transition: all 0.8s;
+  }
+  button:hover {
+    cursor: pointer;
+    color: aqua;
+  }
+}
+
+.main {
+  margin-top: 140px;
+  margin-bottom: 40px;
+}
+.main__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.main__container h1 {
+  width: 982px;
+  height: 114px;
+  font-family: "Inter";
+  font-size: 61px;
+  font-weight: 600;
+  line-height: 70px;
+  text-align: center;
+  color: #002959;
+}
+
+.main__container p {
+  width: 550px;
+  height: 42px;
+  text-transform: capitalize;
+  font-family: "Inter";
+  font-size: 19.3px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  color: #002959;
+}
+
+.main__container button {
+  width: 266px;
+  height: 60px;
+  padding: 18px 30px 18px 30px;
+  gap: 10px;
+  display: inline-block;
+  background-color: #ec6c21;
+  margin-top: 50px;
+  border: none;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+  color: #ffffff;
+}
+
+// main end
+
+.card__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  margin-top: -220px;
+}
+.div {
+  position: relative;
+}
