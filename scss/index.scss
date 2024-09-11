@@ -26,10 +26,10 @@
 img {
   transition: all 1s;
 }
-img:hover {
-  cursor: pointer;
-  transform: rotateY(360deg);
-}
+// img:hover {
+//   cursor: pointer;
+//   transform: rotateY(360deg);
+// }
 .header-section1 ul {
   display: flex;
   align-items: center;
@@ -42,13 +42,10 @@ img:hover {
     line-height: 19.36px;
     color: #002959;
     transition: 2s ease;
-
   }
   a:hover {
     text-decoration: underline;
-    background-color: rgb(194, 186, 186);
     cursor: pointer;
-    padding: 5px;
   }
 }
 .header-right {
@@ -69,7 +66,7 @@ li {
   align-items: center;
   gap: 40px;
 
-  button {
+  .header-button {
     width: 133px;
     height: 60px;
 
@@ -89,9 +86,17 @@ li {
     transition: all 0.8s;
   }
   button:hover {
+    background-color: #bd7952;
     cursor: pointer;
     color: aqua;
   }
+}
+.header-img {
+  transition: all 1.2s;
+}
+.header-img:hover {
+  cursor: pointer;
+  transform: rotateY(360deg);
 }
 
 .main {
@@ -112,6 +117,7 @@ li {
   font-weight: 600;
   line-height: 70px;
   text-align: center;
+  text-transform: capitalize;
   color: #002959;
 }
 
@@ -127,12 +133,13 @@ li {
   color: #002959;
 }
 
-.main__container button {
+.main-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 266px;
   height: 60px;
-  padding: 18px 30px 18px 30px;
-  gap: 10px;
-  display: inline-block;
+  gap: 6px;
   background-color: #ec6c21;
   margin-top: 50px;
   border: none;
@@ -141,8 +148,13 @@ li {
   font-weight: 500;
   line-height: 19.36px;
   color: #ffffff;
+  transition: all 0.5s;
 }
-
+.main-button:hover {
+  cursor: pointer;
+  background-color: #161312;
+  color: red;
+}
 // main end
 
 .card__container {
@@ -151,8 +163,26 @@ li {
   align-items: center;
 }
 .icon {
-  margin-top: -220px;
+  margin-top: -300px;
 }
 .div {
   position: relative;
+}
+
+.main-div {
+  position: relative;
+
+  img {
+    position: absolute;
+  }
+
+  .main-div-one {
+    bottom: 50px;
+    right: 220px;
+  }
+
+  .main-div-two {
+    bottom: 165px;
+    left: 305px;
+  }
 }
